@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
+
+<head>
     <!-- Техническая информация о документе -->
     <meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
     <meta name="description" content="Описание содержимого страницы">
@@ -12,20 +13,36 @@
     <meta name="keywords" lang="en" content="Keywords">
     <!-- Индексация и переход по ссылкам разрешены: -->
     <meta name="robots" content="index, follow">
-    
+
     <title>Заголовок документа</title> <!-- Задаем заголовок документа -->
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Подключаем внешнюю таблицу стилей -->
-  </head>
-  <body>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="#">Peculiar Shopaholic</a></h1>
+        <nav class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Catalog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <!-- Основная часть документа -->
     <h1>Заголовок первого уровня</h1>
-    
-    <p>Этот абзац — блочный элемент; он не может содержать внутри себя другой элемент &lt;p&gt;, а также любой другой блочный элемент..</p>
+
+    <p>Этот абзац — блочный элемент; он не может содержать внутри себя другой элемент &lt;p&gt;, а также любой
+        другой блочный элемент..</p>
 
 
     <div>
-      <p>Any kind of content here. Such as
-      &lt;p&gt;, &lt;table&gt;. You name it!</p>
+        <p>Any kind of content here. Such as
+            &lt;p&gt;, &lt;table&gt;. You name it!</p>
     </div>
 
 
@@ -36,7 +53,7 @@
     <b>Текст</b>
 
     <!-- Подключаем сценарии -->
-    <script src="js/script.js"></script> 
-  </body>
-</html>
+    <script src="js/script.js"></script>
+</body>
 
+</html>

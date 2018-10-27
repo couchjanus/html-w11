@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
+
+<head>
     <!-- Техническая информация о документе -->
     <meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
     <meta name="description" content="Описание содержимого страницы">
@@ -12,31 +13,37 @@
     <meta name="keywords" lang="en" content="Keywords">
     <!-- Индексация и переход по ссылкам разрешены: -->
     <meta name="robots" content="index, follow">
-    
+
     <title>Заголовок документа</title> <!-- Задаем заголовок документа -->
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Подключаем внешнюю таблицу стилей -->
-  </head>
-  <body>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="#">Peculiar Shopaholic</a></h1>
+        <nav class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Catalog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <!-- Основная часть документа -->
-    <h1>Заголовок первого уровня</h1>
-    
-    <p>Этот абзац — блочный элемент; он не может содержать внутри себя другой элемент &lt;p&gt;, а также любой другой блочный элемент..</p>
-
-
-    <div>
-      <p>Any kind of content here. Such as
-      &lt;p&gt;, &lt;table&gt;. You name it!</p>
-    </div>
-
-
-    <p>Участок текста <span style="color:#ff0000">красного</span> цвета.</p>
-
-
-
-    <b>Текст</b>
+    <section class="about">
+        <h2>About</h2>
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet
+            placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.</p>
+        <ul class="actions">
+            <li><a href="#" class="button">Learn More</a></li>
+        </ul>
+    </section>
 
     <!-- Подключаем сценарии -->
-    <script src="js/script.js"></script> 
-  </body>
-</html>
+    <script src="js/script.js"></script>
+</body>
 
+</html>
