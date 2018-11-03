@@ -176,7 +176,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../.nvm/versions/node/v11.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
+},{"./images/bgcat.png":[["bgcat.0b1cc28b.png","sass/images/bgcat.png"],"sass/images/bgcat.png"],"./images/search-icon.png":[["search-icon.357c8b29.png","sass/images/search-icon.png"],"sass/images/search-icon.png"],"_css_loader":"../../../../.nvm/versions/node/v11.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 require("./../sass/styles.scss");
@@ -207,7 +207,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46447" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38213" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Cherry+Swash);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,
 abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,
 var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
@@ -12,21 +15,22 @@ var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbod
   box-sizing: border-box !important;
 }
 
-
 body {
   color: $primary_color;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: 'Raleway', sans-serif;
+  font-size: $base-font-size*1.5;
   font-weight: $base-font-weight;
   line-height: $base-line-height;
 }
 
 h1 {
   display: block;
+  margin-top: 80px;
   padding: 30px;
-  background-color: $primary-bg-color;
-  color: white;
+  font-size: 30px;
+	color: #043744;
   text-align: center;
+  font-family: 'Cherry Swash', cursive;
 }
 
 
@@ -35,96 +39,61 @@ a {
   text-decoration: none;
 }
 
+// header, nav, section, aside, footer {
+//     padding: 5px;
 
-  
-.wrapper p {
-  font: 10px/8px;             // Явный CSS, деление отсутствует
-  $width: 1000px;
-  width: $width/2;            // Используется переменная, операция деления
-  width: round(1.5)/2;        // Используется функция, операция деления
-  height: (500px/2);          // Обособление скобками, операция деления
-  margin-left: 5px + 8px/2px; // Используется +, операция деления
+// }
+
+// section {
+//   margin-top: 2em;
+// }
+
+// .container {
+//   max-width: 100%;
+//   margin-left: auto;
+//   margin-right: auto;
+//   max-width: 1200px;
+//   max-width: 120rem;
+//   width: 90%
+// }
+
+hr { border: solid #E8E8E8; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }
+h3 { font-size: 22px; line-height: 30px; margin-bottom: 12px; }
+
+
+/********** картинка слева **********/
+
+.to_left {
+  float: left;
+  margin: 0 1em 1em 0;
+  border-radius: 20px;
+ }
+
+/********** картинка справа **********/
+
+.to_right {
+  /* height: 150px; */
+  position: relative;
+  width: 300px;
+  float: right;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 20px;
 }
 
-.pp {
-  $font-size: 12px;
-  $line-height: 30px;
-  font: #{$font-size}/#{$line-height};
+/********** картинка по центру********* */
+.to_center {
+  display: block;
+  position: relative;
+  margin: 0 auto 1.5%;
+  border-radius: 20px;
 }
 
-
-h4{
-  background-color: green;
-  padding: 50px 20px 20px 50px;
-  }
-
-h3{
-  background-color: blue;
-  padding: 400px 50px 50px 400px;
-  }       
-
-header, nav, section, aside, footer {
-    padding: 5px;
-
+.group:before,
+.group:after {
+    content: " ";
+    display: table;
 }
-
-.fun-border {
-  border: 2px solid red;
-  /* граница изгибается в виде 'D' */ 
-  // border-radius: 10px 40px 40px 10px;
-
-}
-   
-.border {
-    display: block;
-    border: 1px;
-    border: 2px dotted;
-    border: medium dashed green;
-    // border-radius: 2em;
-}
-
-a {
-  border-right:1px solid darken($primary-color, 10%);
-  
-}
-
-.center {
-  margin: auto;
-  background: lime;
-  width: 66%;
-}
-
-.outside {
-  margin: 3rem 0 0 -3rem;
-  background: cyan;
-  width: 66%;
-}       
-
-
-.wrapper{
-  width: 90%;
-  margin: 0 auto;
-}
-
-.cdiv {
-  margin: 2rem 0;
-  background: lavender;
-  }
-
-.cp {
-  margin: .4rem 0 1.2rem 0;
-  background: yellow;
-}
-
-section {
-  margin-top: 2em;
-}
-
-.container {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-  max-width: 120rem;
-  width: 90%
+.group:after {
+    clear: both;
 }
