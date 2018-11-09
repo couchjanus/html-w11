@@ -7,94 +7,73 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <style>
+
+
             .container {
-                max-width: 960px;
-                margin: 0 auto 0 auto;
+                margin-left: auto;
+                margin-right: auto;
             }
+
+            .container.\31 25\25 {
+                width: 100%;
+                max-width: 1750px;
+                min-width: 1400px;
+            }
+
+            .container.\37 5\25 {
+                width: 1050px;
+            }
+
+            .container.\35 0\25 {
+                width: 700px;
+            }
+
+            .container.\32 5\25 {
+                width: 350px;
+            }
+
+
             .block{
                 height: 100px;
             }
+
             .pink {
                 background: pink;
                 width: 100%;
+                
             }
+            .pink::before{
+                content: '\31 25\25';
+            }
+
             .blue{
-                background: blue;
+                background: rgba(0, 0, 255, 0.329);
                 float: left;
                 width: 60%;
             }
+            .blue::before{
+                content: '\-11u';
+            }
+
+            
             .green{
-                background: green;
+                background: rgb(176, 236, 176);
                 float: left;
                 width: 40%;
             }
+            .green::before{
+                content: '\38 u, .\38 u\24';
+            }
+            
             .orange{
                 background: orange;
                 clear: left;
                 width: 100%;
             }
-
-            .relative1 {
-                position: relative;
-                background-color: rgb(15, 216, 82);
-            }
-            .relative2 {
-                position: relative;
-                background-color: rgb(230, 7, 93);
-     
-                /* top: -20px;
-                left: 20px; */
-                width: 500px;
-            }
-
-
-             /* body{
-       
-                position: relative;
-            } */
-           .absolute{
-                background:rgb(4, 41, 247);
-                margin-left: 100px;
-                }
-            
-            .absolute span{
-                background:#f5e505;
-                height:100px;
-                position:absolute;
+            .orange::before{
+                content: '\31 2u\24\28mobile\29';
             }
             
-            /* .absolute{
-                background:rgb(4, 41, 247);
-                margin-left: 100px;
-                position: relative;
-            }
-            .absolute span{
-                background:#f5e505;
-                height:100px;
-                
-                position:absolute;
-                left:0;
-                top:0;
-            }
-        */
-
-        .element {
-                background-color: rgba(0, 0, 0, 0.3);
-                padding: 20px;
-                color: rgba(255, 255, 255, 0.4);
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
-        .parent {
-                color: white;
-                padding: 70px;
-                position: relative;
-                background-color: #0074d9;
-            }
-
-
         
         </style>
     </head>
@@ -115,59 +94,13 @@
     
         <hr>
         
-        <section id="main">
-            <div class="block pink">Header</div>
+        <section class="container 25%">
+            <div class="block pink">Header </div>
             <div class="block blue">Context - left side</div>
             <div class="block green">Navigation - right side</div>
             <div class="block orange">Footer</div>
         </section>
 
-        <div class="cf"></div>
-        <div class="container" id="rel">
-            <div class="row">
-                <h3>Relative</h3>
-                <div class="relative1">
-                    relative ведет себя в точности как static но лишь до тех пор, пока вы не добавите некоторые дополнительные свойства.
-                </div>
-                            
-                <div class="relative2">
-                    Добавление свойств top, right, bottom, и left изменяет позицию элемента, сдвигая его в ту или иную сторону относительно его начального расположения. Другой контент не будет перестраиваться, чтобы заполнить любое свободное пространство, оставленное этим элементом.
-                </div>
-            </div>
-        </div>    
-        <div class="cf"></div>
-
-        <div class="container" id="abs">
-                <div class="row">
-                    <h3>Absolute</h3>
-                    <div class="absolute">
-                        1 Spam 
-                        <span>2 Spam</span> 
-                        3 Spam
-                    </div>
-                                
-                </div>
-            </div>    
-        <div class="cf"></div>
-
-
-        <article class="container">
-                <div class="row">
-                    <h2 class="align-center">Relative</h2>
-                </div>
-        </article>
-        <div class="cf"></div>
-        <div class="container">
-            <div class="row">
-                <div class="parent">
-                    Parent element
-                     
-                    <div class="element">Child element</div>
-                     
-                </div>
-                            
-            </div>
-        </div>    
         <div class="cf"></div>
 
 

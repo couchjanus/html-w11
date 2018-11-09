@@ -1,48 +1,117 @@
+/* Image */
+
+.image {
+  border: 0;
+  position: relative;
+
+  &.featured {
+    display: block;
+    margin: 0 0 2em 0;
+
+    & img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &:before {
+    background: url("./images/overlay.png");
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+}
+
 /* Banner */
-.header {
-    background-color: #666666;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: #d8d8d8;
-    padding: 14em 0;
-    text-align: center;
-    position: relative;
-  }
+
+#banner {
+  color: #fff;
+  text-align: center;
+  padding: 6em 0;
+  background-attachment: scroll, scroll, scroll, fixed;
+background-color: #645862;
+background-image: url("./images/3.jpg");
+background-position: bottom left, bottom right, top left, top center;
+background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+background-size: cover;
+}
+
+
+.row-more{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+} 
+#banner .inner {
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  padding: 3em;
   
-  header p {
-    font-family: "Raleway", Helvetica, sans-serif;
-    font-size: 0.7em;
-    font-weight: 400;
-    letter-spacing: 0.25em;
-    line-height: 2.5;
-    text-transform: uppercase;
-  }
-  
-  .banner {
-    background-image: url("/images/1.jpg");
-  }
-  
-  .header h2 {
-    color: #ffffff;
-    font-size: 3.5em;
-    line-height: 1em;
-    margin: 0 0 0.5em 0;
-    padding: 0;
-  }
-  
-  .header p {
-    font-size: 1.5em;
-    color: #ffffff;
-    margin-bottom: 2em;
-  }
-  
-  .header p a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  .banner {
-    background-image: url("/images/1.jpg");
-  }
-  
+  background: rgba(52, 27, 43, 0.5);
+}
+
+#banner .inner header {
+  display: inline-block;
+  padding: 3px 0 3px 0;
+  margin: 0 0 2em 0;
+  border-bottom: solid 2px;
+border-top: solid 2px;
+}
+
+#banner .inner header h2 {
+  font-size: 2.5em;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  padding-left: 0.05em;
+  margin: 0;
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  position: relative;
+}
+
+#banner .inner p {
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+#banner .inner p a {
+  color: inherit;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#banner .inner footer {
+  margin: 2em 0 0 0;
+}
+
+
+
+
+.bg{
+  background-size: cover;
+  background-attachment: fixed;
+  height: 20em;
+  width: 100%;
+}
+
+.bg1{
+  background-image: url('./images/2.jpg');
+}
+
+.bg2{
+  background-image: url('./images/3.jpg');
+}
+
+.bg3{
+  background-image: url('./images/4.jpg');
+}
+
+.bg4{
+  background-image: url('./images/1.jpg');
+}
+
