@@ -176,7 +176,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./images/4.jpg":[["4.7eb6a85b.jpg","sass/images/4.jpg"],"sass/images/4.jpg"],"./images/overlay.png":[["overlay.b2a30f3f.png","sass/images/overlay.png"],"sass/images/overlay.png"],"./images/3.jpg":[["3.96a77184.jpg","sass/images/3.jpg"],"sass/images/3.jpg"],"./images/2.jpg":[["2.8ae20e3d.jpg","sass/images/2.jpg"],"sass/images/2.jpg"],"./images/1.jpg":[["1.4d38a63f.jpg","sass/images/1.jpg"],"sass/images/1.jpg"],"_css_loader":"../../../../.nvm/versions/node/v11.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
+},{"./images/4.jpg":[["4.7eb6a85b.jpg","sass/images/4.jpg"],"sass/images/4.jpg"],"./images/overlay.png":[["overlay.b2a30f3f.png","sass/images/overlay.png"],"sass/images/overlay.png"],"./images/3.jpg":[["3.96a77184.jpg","sass/images/3.jpg"],"sass/images/3.jpg"],"./images/2.jpg":[["2.8ae20e3d.jpg","sass/images/2.jpg"],"sass/images/2.jpg"],"./images/1.jpg":[["1.4d38a63f.jpg","sass/images/1.jpg"],"sass/images/1.jpg"],"./../images/cat2.jpg":[["cat2.58e2fd84.jpg","images/cat2.jpg"],"images/cat2.jpg"],"./../images/cat1.jpg":[["cat1.7b3f661b.jpg","images/cat1.jpg"],"images/cat1.jpg"],"./../images/cat3.jpg":[["cat3.06d0e916.jpg","images/cat3.jpg"],"images/cat3.jpg"],"./../images/cat4.jpg":[["cat4.cff22afb.jpg","images/cat4.jpg"],"images/cat4.jpg"],"_css_loader":"../../../../.nvm/versions/node/v11.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 require("./../sass/styles.scss");
@@ -207,7 +207,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35453" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45211" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

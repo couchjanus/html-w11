@@ -171,12 +171,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../.nvm/versions/node/v11.0.0/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"fontawesome/css/font-awesome.min.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../fonts/fontawesome-webfont.eot":[["fontawesome-webfont.104070d2.eot","fontawesome/fonts/fontawesome-webfont.eot"],"fontawesome/fonts/fontawesome-webfont.eot"],"./../fonts/fontawesome-webfont.woff2":[["fontawesome-webfont.e485919e.woff2","fontawesome/fonts/fontawesome-webfont.woff2"],"fontawesome/fonts/fontawesome-webfont.woff2"],"./../fonts/fontawesome-webfont.woff":[["fontawesome-webfont.e99c3164.woff","fontawesome/fonts/fontawesome-webfont.woff"],"fontawesome/fonts/fontawesome-webfont.woff"],"./../fonts/fontawesome-webfont.ttf":[["fontawesome-webfont.a4ab8865.ttf","fontawesome/fonts/fontawesome-webfont.ttf"],"fontawesome/fonts/fontawesome-webfont.ttf"],"./../fonts/fontawesome-webfont.svg":[["fontawesome-webfont.60fc1df3.svg","fontawesome/fonts/fontawesome-webfont.svg"],"fontawesome/fonts/fontawesome-webfont.svg"],"_css_loader":"../../../../.nvm/versions/node/v11.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../.nvm/versions/node/v11.0.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../../../../.nvm/versions/node/v11.0.0/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../../../.nvm/versions/node/v11.0.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
